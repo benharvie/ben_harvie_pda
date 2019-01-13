@@ -21,6 +21,7 @@ Calculator.prototype = {
 
   divide: function(number){
     this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
+    if (parseFloat(number) === 0) this.runningTotal = 'Not A Number'
   },
 
   numberClick: function(number) {
